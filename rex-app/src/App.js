@@ -6,6 +6,7 @@ import {
   Link
 } from 'react-router-dom';
 import Checkbox from './Pages/Checkbox';
+import RadioButton from './Pages/RadioButton';
 
 export default function BasicExample() {
   return (
@@ -14,8 +15,11 @@ export default function BasicExample() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/components/checkbox">
+        <Route path="/components/Checkbox">
           <Checkbox />
+        </Route>
+        <Route path="/components/RadioButton">
+          <RadioButton />
         </Route>
       </Switch>
     </Router>
@@ -31,7 +35,10 @@ function Home() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/components/checkbox">Checkbox</Link>
+          <Link to="/components/Checkbox">Checkbox</Link>
+        </li>
+        <li>
+          <Link to="/components/RadioButton">RadioButton</Link>
         </li>
       </ul>
     </div>
