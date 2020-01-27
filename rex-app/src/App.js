@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import Checkbox from './Pages/Checkbox';
 import RadioButton from './Pages/RadioButton';
+import Track from './Pages/Track';
 
 export default function BasicExample() {
   return (
@@ -20,6 +21,9 @@ export default function BasicExample() {
         </Route>
         <Route path="/components/RadioButton">
           <RadioButton />
+        </Route>
+        <Route path="/components/Track">
+          <Track />
         </Route>
       </Switch>
     </Router>
@@ -39,6 +43,9 @@ function Home() {
         </li>
         <li>
           <Link to="/components/RadioButton">RadioButton</Link>
+        </li>
+        <li>
+          <Link to="/components/Track">Track</Link>
         </li>
       </ul>
     </div>
