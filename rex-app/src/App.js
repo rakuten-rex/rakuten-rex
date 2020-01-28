@@ -8,6 +8,7 @@ import {
 import Checkbox from './Pages/Checkbox';
 import RadioButton from './Pages/RadioButton';
 import Track from './Pages/Track';
+import SwitchToggle from './Pages/Switch';
 
 export default function BasicExample() {
   return (
@@ -24,6 +25,9 @@ export default function BasicExample() {
         </Route>
         <Route path="/components/Track">
           <Track />
+        </Route>
+        <Route path="/components/Switch">
+          <SwitchToggle />
         </Route>
       </Switch>
     </Router>
@@ -46,6 +50,9 @@ function Home() {
         </li>
         <li>
           <Link to="/components/Track">Track</Link>
+        </li>
+        <li>
+          <Link to="/components/Switch">Switch</Link>
         </li>
       </ul>
     </div>
