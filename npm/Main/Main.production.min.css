@@ -1,0 +1,9 @@
+/*!
+ * 
+ * @license @rakuten-rex/rakuten-rex v0.0.1 2020-01-23
+ * Main/Main.production.min.css
+ * 
+ * Copyright (c) 2018-present, Rakuten, Inc.
+ * 
+ * This source code is licensed under the MIT license found in the LICENSE file in the root directory of this source tree.
+ */.rex-main{--rex-gray-900: #333;--rex-main-theme-text: var(--rex-gray-900);--rex-main-title-weight: 600;-moz-osx-font-smoothing: grayscale;-webkit-font-smoothing: antialiased;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-text-size-adjust: 100%;background-color: inherit;color: #333;font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size: 1rem;line-height: 1.5;text-align: left}.rex-main,.rex-main:after,.rex-main:before{-moz-box-sizing: border-box;-ms-box-sizing: border-box;-o-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box}.rex-main h3{color: var(--rex-main-theme-text);display: block;font-weight: var(--rex-main-title-weight);line-height: 1.5rem;margin: 1rem 0 0}

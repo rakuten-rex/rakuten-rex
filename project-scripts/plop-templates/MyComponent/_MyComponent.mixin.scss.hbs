@@ -1,0 +1,79 @@
+@import './core.mixin';
+
+@mixin rex-{{dashCase name}} {
+  @include rex-core();
+  @include rex-{{dashCase name}}-shape();
+  @include rex-{{dashCase name}}-image();
+  @include rex-{{dashCase name}}-title();
+  @include rex-{{dashCase name}}-text();
+  @include rex-{{dashCase name}}-link();
+  @include rex-{{dashCase name}}-elevation();
+  @include rex-{{dashCase name}}-theme();
+}
+
+@mixin rex-{{dashCase name}}-theme() {
+  // ReX Colors
+  --rex-gray-900: #333333;
+  --rex-blue-700: #134ff3;
+  // Theme
+  --rex-{{dashCase name}}-theme-text: var(--rex-gray-900);
+  --rex-{{dashCase name}}-theme-link: var(--rex-blue-700);
+  // Props
+  --rex-{{dashCase name}}-title-weight: 600;
+}
+
+@mixin rex-{{dashCase name}}-shape {
+  // Static Props
+  width: 280px;
+  height: auto;
+  background-color: #fff;
+  padding-bottom: 1.5rem;
+  border-radius: 4px 4px 0px 0px;
+}
+
+@mixin rex-{{dashCase name}}-image {
+  img {
+    display: block;
+    border-radius: 4px 4px 0px 0px;
+  }
+}
+
+@mixin rex-{{dashCase name}}-title {
+  h3 {
+    line-height: 1.5rem;
+    font-weight: var(--rex-{{dashCase name}}-title-weight);
+    color: var(--rex-{{dashCase name}}-theme-text);
+    padding: 0 1.5rem 0 1.5rem;
+    margin: 1rem 0 0 0;
+    display: block;
+  }
+}
+
+@mixin rex-{{dashCase name}}-text {
+  p {
+    line-height: 1.25rem;
+    color: var(--rex-{{dashCase name}}-theme-text);
+    padding: 0.5rem 1.5rem 0 1.5rem;
+    margin: 0;
+  }
+}
+
+@mixin rex-{{dashCase name}}-link {
+  a {
+    line-height: 1.25rem;
+    color: var(--rex-{{dashCase name}}-theme-link);
+    padding: 1rem 2.5rem 0 1.5rem;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    text-align: right;
+  }
+}
+
+@mixin rex-{{dashCase name}}-elevation {
+  &.elevation {
+    -moz-box-shadow: 0px 1px 3px #00000033, 0px 2px 2px #0000001f, 0px 0px 2px #00000024;
+    -webkit-box-shadow: 0px 1px 3px #00000033, 0px 2px 2px #0000001f, 0px 0px 2px #00000024;
+    box-shadow: 0px 1px 3px#00000033, 0px 2px 2px #0000001f, 0px 0px 2px #00000024;
+  }
+}

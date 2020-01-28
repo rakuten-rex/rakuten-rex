@@ -1,0 +1,5 @@
+@import './Main.mixin';
+
+.rex-main {
+  @include rex-main();
+}
