@@ -13,6 +13,7 @@ import Stepper from './Pages/Stepper';
 import Select from './Pages/Select';
 import Paper from './Pages/Paper';
 import Button from './Pages/Button';
+import Textarea from './Pages/Textarea';
 
 export default function BasicExample() {
   return (
@@ -44,6 +45,9 @@ export default function BasicExample() {
         </Route>
         <Route path="/components/Button">
           <Button />
+        </Route>
+        <Route path="/components/Textarea">
+          <Textarea />
         </Route>
       </Switch>
     </Router>
@@ -81,6 +85,9 @@ function Home() {
         </li>
         <li>
           <Link to="/components/Button">Button</Link>
+        </li>
+        <li>
+          <Link to="/components/Textarea">Textarea</Link>
         </li>
       </ul>
     </div>
