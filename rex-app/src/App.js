@@ -12,6 +12,7 @@ import SwitchToggle from './Pages/Switch';
 import Stepper from './Pages/Stepper';
 import Select from './Pages/Select';
 import Paper from './Pages/Paper';
+import Button from './Pages/Button';
 
 export default function BasicExample() {
   return (
@@ -40,6 +41,9 @@ export default function BasicExample() {
         </Route>
         <Route path="/components/Paper">
           <Paper />
+        </Route>
+        <Route path="/components/Button">
+          <Button />
         </Route>
       </Switch>
     </Router>
@@ -74,6 +78,9 @@ function Home() {
         </li>
         <li>
           <Link to="/components/Paper">Paper</Link>
+        </li>
+        <li>
+          <Link to="/components/Button">Button</Link>
         </li>
       </ul>
     </div>
