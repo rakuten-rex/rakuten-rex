@@ -14,6 +14,7 @@ import Select from './Pages/Select';
 import Paper from './Pages/Paper';
 import Button from './Pages/Button';
 import Textarea from './Pages/Textarea';
+import TextField from './Pages/TextField';
 
 export default function BasicExample() {
   return (
@@ -48,6 +49,9 @@ export default function BasicExample() {
         </Route>
         <Route path="/components/Textarea">
           <Textarea />
+        </Route>
+        <Route path="/components/TextField">
+          <TextField />
         </Route>
       </Switch>
     </Router>
@@ -88,6 +92,9 @@ function Home() {
         </li>
         <li>
           <Link to="/components/Textarea">Textarea</Link>
+        </li>
+        <li>
+          <Link to="/components/TextField">TextField</Link>
         </li>
       </ul>
     </div>
