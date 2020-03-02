@@ -13,6 +13,10 @@ import Stepper from './Pages/Stepper';
 import Select from './Pages/Select';
 import Paper from './Pages/Paper';
 import Button from './Pages/Button';
+import Textarea from './Pages/Textarea';
+import TextField from './Pages/TextField';
+import Grid from './Pages/Grid';
+import Password from './Pages/Password';
 
 export default function BasicExample() {
   return (
@@ -44,6 +48,18 @@ export default function BasicExample() {
         </Route>
         <Route path="/components/Button">
           <Button />
+        </Route>
+        <Route path="/components/Textarea">
+          <Textarea />
+        </Route>
+        <Route path="/components/TextField">
+          <TextField />
+        </Route>
+        <Route path="/components/Grid">
+          <Grid />
+        </Route>
+        <Route path="/components/Password">
+          <Password />
         </Route>
       </Switch>
     </Router>
@@ -81,6 +97,18 @@ function Home() {
         </li>
         <li>
           <Link to="/components/Button">Button</Link>
+        </li>
+        <li>
+          <Link to="/components/Textarea">Textarea</Link>
+        </li>
+        <li>
+          <Link to="/components/TextField">TextField</Link>
+        </li>
+        <li>
+          <Link to="/components/Grid">Grid</Link>
+        </li>
+        <li>
+          <Link to="/components/Password">Password</Link>
         </li>
       </ul>
     </div>

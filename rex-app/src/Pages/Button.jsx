@@ -21,6 +21,15 @@ import PillButtonLink from '@rakuten-rex/button/PillButton/PillButtonLink';
 import PillOutlineButtonDiv from '@rakuten-rex/button/PillOutlineButton/PillOutlineButtonDiv';
 import PillOutlineButtonInput from '@rakuten-rex/button/PillOutlineButton/PillOutlineButtonInput';
 import PillOutlineButtonLink from '@rakuten-rex/button/PillOutlineButton/PillOutlineButtonLink';
+// link button
+import LinkButtonDiv from '@rakuten-rex/button/LinkButton/LinkButtonDiv';
+import LinkButtonInput from '@rakuten-rex/button/LinkButton/LinkButtonInput';
+import LinkButtonLink from '@rakuten-rex/button/LinkButton/LinkButtonLink';
+// pill link button
+import PillLinkButtonDiv from '@rakuten-rex/button/PillLinkButton/PillLinkButtonDiv';
+import PillLinkButtonInput from '@rakuten-rex/button/PillLinkButton/PillLinkButtonInput';
+import PillLinkButtonLink from '@rakuten-rex/button/PillLinkButton/PillLinkButtonLink';
+
 
 export default function Index() {
   return (
@@ -141,6 +150,36 @@ export default function Index() {
         <PillOutlineButtonLink href='/'>
           Link Tag with href
         </PillOutlineButtonLink>
+      </div>
+      <br />
+      <div>
+        <LinkButton>
+          Button Tag
+        </LinkButton>
+        <LinkButtonDiv>
+          Div Tag
+        </LinkButtonDiv>
+        <LinkButtonInput>
+          Input Tag
+        </LinkButtonInput>
+        <LinkButtonLink href='/'>
+          Link Tag with href
+        </LinkButtonLink>
+      </div>
+      <br />
+      <div>
+        <PillLinkButton>
+          Button Tag
+        </PillLinkButton>
+        <PillLinkButtonDiv>
+          Div Tag
+        </PillLinkButtonDiv>
+        <PillLinkButtonInput>
+          Input Tag
+        </PillLinkButtonInput>
+        <PillLinkButtonLink href='/'>
+          Link Tag with href
+        </PillLinkButtonLink>
       </div>
     </>
   );
