@@ -14,6 +14,24 @@ export default function Index() {
         htmlFor="age"
         labelId="labelId"
       />
+      <h2>Hover State</h2>
+      <TextareaLabel
+        placeholder="Placeholder"
+        label="Label"
+        id="age"
+        htmlFor="age"
+        labelId="labelId"
+        state="hover"
+      />
+      <h2>Focus And Active State</h2>
+      <TextareaLabel
+        placeholder="Placeholder"
+        label="Label"
+        id="age"
+        htmlFor="age"
+        labelId="labelId"
+        state="active"
+      />
       <h2>Disabled</h2>
       <TextareaLabel
         placeholder="無効"
@@ -41,24 +59,6 @@ export default function Index() {
         labelId="labelId"
         state="valid"
       />
-      <h2>Focus And Active State</h2>
-      <TextareaLabel
-        placeholder="Placeholder"
-        label="Label"
-        id="age"
-        htmlFor="age"
-        labelId="labelId"
-        state="active"
-      />
-      <h2>Hover State</h2>
-      <TextareaLabel
-        placeholder="Placeholder"
-        label="Label"
-        id="age"
-        htmlFor="age"
-        labelId="labelId"
-        state="hover"
-      />
       <h2>With Default Value</h2>
       <TextareaLabel
         placeholder="Placeholder"
@@ -67,7 +67,7 @@ export default function Index() {
         htmlFor="age"
         labelId="labelId"
         defaultValue="Default Value"
-      />
+      />
       <h2>Theme</h2>
       <TextareaLabel
         style={{

@@ -7,7 +7,7 @@ export default function Index() {
   return (
     <>
       <h1>Password</h1>
-      <h2>Default(With Label)</h2>
+      <h2>Default</h2>
       <PasswordLabel
         placeholder="Password"
         htmlFor="password-01"
@@ -15,21 +15,23 @@ export default function Index() {
         labelId="label-id"
         name="Password"
       />
-      <h2>With Helper text</h2>
-      <PasswordHelper
+      <h2>Hover State</h2>
+      <PasswordLabel
         placeholder="Password"
-        htmlFor="password-02"
-        helper="Helper"
-        name="Password"
-      />
-      <h2>With Label and Helper text</h2>
-      <PasswordLabelHelper
-        placeholder="Password"
-        htmlFor="password-03"
+        htmlFor="password-01"
         label="Label"
         labelId="label-id"
-        helper="Helper Text"
         name="Password"
+        state="hover"
+      />
+      <h2>Focus And Active State</h2>
+      <PasswordLabel
+        placeholder="Password"
+        htmlFor="password-05"
+        label="Label"
+        labelId="label-id"
+        name="Password"
+        state="active"
       />
       <h2>Disabled</h2>
       <PasswordLabel
@@ -40,14 +42,32 @@ export default function Index() {
         name="Password"
         disabled
       />
-      <h2>Active</h2>
+      <h2>Error State</h2>
       <PasswordLabel
         placeholder="Password"
-        htmlFor="password-05"
+        htmlFor="password-04"
         label="Label"
         labelId="label-id"
         name="Password"
-        state="active"
+        state="error"
+      />
+      <h2>Valid State</h2>
+      <PasswordLabel
+        placeholder="Password"
+        htmlFor="password-04"
+        label="Label"
+        labelId="label-id"
+        name="Password"
+        state="valid"
+      />
+      <h2>Required State</h2>
+      <PasswordLabel
+        placeholder="Password"
+        htmlFor="password-04"
+        label="Label"
+        labelId="label-id"
+        name="Password"
+        required
       />
       <h2>Show Password</h2>
       <PasswordLabel
@@ -66,25 +86,25 @@ export default function Index() {
         labelId="label-id"
         name="Password"
         style={{
-          '--rex-password-theme-text': 'rgba(245,166,35,1)',
-          '--rex-password-theme-border': 'rgba(245,166,35,1)',
-          '--rex-password-theme-placeholder': 'rgba(245,166,35,1)',
-          '--rex-password-theme-hover-text': 'rgba(74,144,226,1)',
-          '--rex-password-theme-hover-border': 'rgba(74,144,226,1)',
-          '--rex-password-theme-hover-placeholder': 'rgba(74,144,226,1)',
-          '--rex-password-theme-active-text': 'rgba(139,87,42,1)',
-          '--rex-password-theme-active-border': 'rgba(139,87,42,1)',
-          '--rex-password-theme-active-placeholder': 'rgba(139,87,42,1)',
-          '--rex-password-theme-disabled-border': 'rgba(80,227,194,1)',
-          '--rex-password-theme-disabled-placeholder': 'rgba(80,227,194,1)',
-          '--rex-password-theme-disabled-text': 'rgba(80,227,194,1)',
-          '--rex-password-theme-icon': 'rgba(245,166,35,1)',
-          '--rex-password-theme-hover-icon': 'rgba(74,144,226,1)',
-          '--rex-password-theme-active-icon': 'rgba(139,87,42,1)',
-          '--rex-password-label-theme-text': 'rgba(245,166,35,1)',
-          '--rex-password-label-theme-hover-text': 'rgba(74,144,226,1)',
-          '--rex-password-label-theme-active-text': 'rgba(139,87,42,1)',
-          '--rex-password-label-theme-disabled-text': 'rgba(80,227,194,1)',
+          '--rex-text-field-theme-text': 'rgba(245,166,35,1)',
+          '--rex-text-field-theme-border': 'rgba(245,166,35,1)',
+          '--rex-text-field-theme-placeholder': 'rgba(245,166,35,1)',
+          '--rex-text-field-theme-hover-text': 'rgba(74,144,226,1)',
+          '--rex-text-field-theme-hover-border': 'rgba(74,144,226,1)',
+          '--rex-text-field-theme-hover-placeholder': 'rgba(74,144,226,1)',
+          '--rex-text-field-theme-active-text': 'rgba(139,87,42,1)',
+          '--rex-text-field-theme-active-border': 'rgba(3, 3, 3, 3)',
+          '--rex-text-field-theme-active-placeholder': 'rgba(139,87,42,1)',
+          '--rex-text-field-theme-disabled-border': 'rgba(80,227,194,1)',
+          '--rex-text-field-theme-disabled-placeholder': 'rgba(80,227,194,1)',
+          '--rex-text-field-theme-disabled-text': 'rgba(80,227,194,1)',
+          '--rex-text-field-theme-icon': 'rgba(245,166,35,1)',
+          '--rex-text-field-theme-hover-icon': 'rgba(74,144,226,1)',
+          '--rex-text-field-theme-active-icon': 'rgba(139,87,42,1)',
+          '--rex-text-field-label-theme-text': 'rgba(245,166,35,1)',
+          '--rex-text-field-label-theme-hover-text': 'rgba(74,144,226,1)',
+          '--rex-text-field-label-theme-active-text': 'rgba(139,87,42,1)',
+          '--rex-text-field-label-theme-disabled-text': 'rgba(80,227,194,1)',
         }}
       />
     </>

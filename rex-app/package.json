@@ -7,7 +7,7 @@
     "@rakuten-rex/checkbox": "^1.1.2",
     "@rakuten-rex/grid": "^1.2.1",
     "@rakuten-rex/paper": "^1.0.2",
-    "@rakuten-rex/password": "^1.0.0",
+    "@rakuten-rex/password": "^1.0.1",
     "@rakuten-rex/radio-button": "^1.1.1",
     "@rakuten-rex/select": "^1.1.2",
     "@rakuten-rex/stepper": "^1.0.2",
