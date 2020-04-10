@@ -1,9 +1,0 @@
-!.gitignore
-!.npmignore
-!.babelrc
-.cache
-node_modules
-!docs/html/node_modules
-coverage/
-.vscode/
-.DS_Store
