@@ -34,6 +34,18 @@
   },
   "homepage": "https://rakuten-rex.github.io/rakuten-rex/",
   "dependencies": {
+    "@rakuten-rex/button": "1.3.0",
+    "@rakuten-rex/checkbox": "1.3.0",
+    "@rakuten-rex/grid": "1.5.0",
+    "@rakuten-rex/paper": "1.0.2",
+    "@rakuten-rex/password": "1.2.0",
+    "@rakuten-rex/radio-button": "1.3.0",
+    "@rakuten-rex/select": "1.3.2",
+    "@rakuten-rex/stepper": "1.1.0",
+    "@rakuten-rex/switch": "1.2.0",
+    "@rakuten-rex/text-field": "1.2.0",
+    "@rakuten-rex/textarea": "1.2.1",
+    "@rakuten-rex/track": "1.1.0",
     "prop-types": "15.7.2",
     "react": "16.12.0",
     "react-dom": "16.12.0"
