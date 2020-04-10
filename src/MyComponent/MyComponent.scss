@@ -1,0 +1,5 @@
+@import './MyComponent.mixin';
+
+.rex-my-component {
+  @include rex-my-component();
+}

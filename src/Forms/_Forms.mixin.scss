@@ -1,0 +1,26 @@
+@import './core.mixin';
+
+@mixin rex-forms {
+  @include rex-core();
+  @include rex-forms-theme();
+  @include rex-forms-title();
+}
+
+@mixin rex-forms-theme() {
+  // ReX Colors
+  --rex-gray-900: #333333;
+  // Theme
+  --rex-forms-theme-text: var(--rex-gray-900);
+  // Props
+  --rex-forms-title-weight: 600;
+}
+
+@mixin rex-forms-title {
+  h3 {
+    line-height: 1.5rem;
+    font-weight: var(--rex-forms-title-weight);
+    color: var(--rex-forms-theme-text);
+    margin: 1rem 0 0 0;
+    display: block;
+  }
+}

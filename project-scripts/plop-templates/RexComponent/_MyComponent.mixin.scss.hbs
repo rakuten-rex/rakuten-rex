@@ -1,0 +1,26 @@
+@import './core.mixin';
+
+@mixin rex-{{dashCase name}} {
+  @include rex-core();
+  @include rex-{{dashCase name}}-theme();
+  @include rex-{{dashCase name}}-title();
+}
+
+@mixin rex-{{dashCase name}}-theme() {
+  // ReX Colors
+  --rex-gray-900: #333333;
+  // Theme
+  --rex-{{dashCase name}}-theme-text: var(--rex-gray-900);
+  // Props
+  --rex-{{dashCase name}}-title-weight: 600;
+}
+
+@mixin rex-{{dashCase name}}-title {
+  h3 {
+    line-height: 1.5rem;
+    font-weight: var(--rex-{{dashCase name}}-title-weight);
+    color: var(--rex-{{dashCase name}}-theme-text);
+    margin: 1rem 0 0 0;
+    display: block;
+  }
+}

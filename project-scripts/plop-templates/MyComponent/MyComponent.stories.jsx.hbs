@@ -1,0 +1,104 @@
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable import/extensions */
+import React from 'react';
+import { action } from '@storybook/addon-actions';
+import { text, color, select } from '@storybook/addon-knobs';
+import {{pascalCase name}} from 'src/{{pascalCase name}}';
+import { cssVarsToLegacy, withKnobs } from '../../.storybook/helper';
+
+/**
+ * Main story
+ * */
+export default {
+  title: '{{titleCase name}}',
+  decorators: withKnobs,
+};
+
+/**
+ * Stories
+ * */
+export const defaultView = () => <{{pascalCase name}} />;
+
+export const withLink = () => (
+  <{{pascalCase name}}>
+    <a href="/" target="_blank">
+      Link
+    </a>
+  </{{pascalCase name}}>
+);
+
+export const withCustomClassname = () => (
+  <{{pascalCase name}} className="rex-{{dashCase name}} elevation" />
+);
+
+export const withClickEvent = () => {
+  const onClickSample = action('clicked');
+
+  return <{{pascalCase name}} onClick={onClickSample} />;
+};
+
+export const withDynamicProps = () => {
+  const sampleTitle = text('title', 'Dynamic Title');
+  const sampleText = text('text', 'Dynamic Text');
+
+  return <{{pascalCase name}} title={sampleTitle} text={sampleText} />;
+};
+
+/**
+ * Custom Theme support
+ * */
+
+function Theme() {
+  const themeText = color('Text', 'crimson', 'Theme Colors');
+  const themeLink = color('Link', '#CC0070', 'Theme Colors');
+  const themeTitleWeight = select(
+    'Title Weight',
+    {
+      Weight300: 300,
+      WeightNormal: 'normal',
+      Weight500: 500,
+      WeightBold: 'bold',
+    },
+    500,
+    'Theme Props'
+  );
+
+  const customStyle = {
+    '--rex-{{dashCase name}}-theme-text': themeText,
+    '--rex-{{dashCase name}}-theme-link': themeLink,
+    '--rex-{{dashCase name}}-title-weight': themeTitleWeight,
+  };
+
+  return {
+    customStyle,
+    customStyleHtml: cssVarsToLegacy(customStyle, {{pascalCase name}}),
+  };
+}
+
+export const WithThemeReactAndCSSVars = () => {
+  const { customStyle } = Theme();
+
+  return (
+    <{{pascalCase name}} style={customStyle}>
+      <a href="/" target="_blank">
+        Link
+      </a>
+    </{{pascalCase name}}>
+  );
+};
+
+export const WithThemeHTMLAndLegacyCSS = () => {
+  const { customStyleHtml } = Theme();
+
+  return (
+    <>
+      <style>{customStyleHtml}</style>
+      <{{pascalCase name}}>
+        <a href="/" target="_blank">
+          Link
+        </a>
+      </{{pascalCase name}}>
+    </>
+  );
+};
