@@ -1,16 +1,26 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import RouterHome from './Home';
-import RouterButton from './Button';
+import Home from './Home';
+import Button from './Button';
+import Checkbox from './Checkbox';
+import RadioButton from './RadioButton';
+import Track from './Track';
+import Switch from './Switch';
+import Stepper from './Stepper';
 
 export default function App() {
   return (
     <Router>
       {/* Home Routing */}
-      <RouterHome />
-      {/* Components Routing */}
-      <RouterButton />
+      <Home />
+      {/* Components Pages Routing */}
+      <Button />
+      <Checkbox />
+      <RadioButton />
+      <Track />
+      <Switch />
+      <Stepper />
     </Router>
   );
 }
