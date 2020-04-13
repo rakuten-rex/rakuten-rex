@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Home from './Home';
 import Button from './Button';
 import Checkbox from './Checkbox';
+import Grid from './Grid';
 import RadioButton from './RadioButton';
 import Track from './Track';
 import Switch from './Switch';
@@ -17,6 +18,7 @@ export default function App() {
       {/* Components Pages Routing */}
       <Button />
       <Checkbox />
+      <Grid />
       <RadioButton />
       <Track />
       <Switch />

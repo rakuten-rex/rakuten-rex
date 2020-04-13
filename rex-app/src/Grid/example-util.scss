@@ -1,0 +1,26 @@
+@import "@rakuten-rex/grid/Grid/sass/_styles.mixin.scss";
+
+/* 
+The following styles are provided to visualize the Grid breakpoints
+The classNames `rex-grid-example` and `rex-grid-row-example` are not required
+for production usage.
+*/
+
+.rex-grid-example {
+  @include rex-core();
+  border: 1px dashed #82A3FF;
+  background-color: #fff;
+}
+
+.rex-grid-row-example {
+  @include rex-core();
+  background-color: #E8EEFF;
+  
+  span {
+    background-color: #C9D7FF;
+    display: block;
+    height: 8rem;
+    text-align: center;
+    border: 1px dashed #A0B9FF;
+  }
+}
