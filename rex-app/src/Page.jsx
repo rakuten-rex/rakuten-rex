@@ -15,7 +15,7 @@ export default function Page(main, list) {
                 list.map(({ name }) => {
 
                   return (
-                    <li>
+                    <li key={`page-content-${name}`}>
                       <RouterLink to={`/${main}/${name}`}>{name}</RouterLink>
                     </li>
                   )
@@ -29,7 +29,7 @@ export default function Page(main, list) {
           list.map(({ name, Component }) => {
 
             return (
-              <Route path={`/${main}/${name}`}>
+              <Route path={`/${main}/${name}`} key={`route-${name}`}>
                 <h2>{name}</h2>
                 <Component />
               </Route>

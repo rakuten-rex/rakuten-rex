@@ -6,6 +6,7 @@ import Button from './Button';
 import Checkbox from './Checkbox';
 import Grid from './Grid';
 import Panel from './Panel';
+import Password from './Password';
 import RadioButton from './RadioButton';
 import Track from './Track';
 import Switch from './Switch';
@@ -21,6 +22,7 @@ export default function App() {
       <Checkbox />
       <Grid />
       <Panel />
+      <Password />
       <RadioButton />
       <Track />
       <Switch />

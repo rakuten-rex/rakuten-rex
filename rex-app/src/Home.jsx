@@ -26,7 +26,7 @@ export default function Home() {
             {
               pages.map(pageName => {
                 return (
-                  <li>
+                  <li key={`page-${pageName}`}>
                     <RouterLink to={`/${pageName}`}>{pageName}</RouterLink>
                   </li>
                 );
