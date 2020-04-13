@@ -41,7 +41,7 @@
     "@rakuten-rex/password": "1.2.0",
     "@rakuten-rex/radio-button": "1.3.0",
     "@rakuten-rex/select": "1.3.2",
-    "@rakuten-rex/stepper": "1.1.0",
+    "@rakuten-rex/stepper": "^1.1.0",
     "@rakuten-rex/switch": "1.2.0",
     "@rakuten-rex/text-field": "1.2.0",
     "@rakuten-rex/textarea": "1.2.1",

@@ -9,9 +9,9 @@ import Panel from './Panel';
 import Password from './Password';
 import RadioButton from './RadioButton';
 import Select from './Select';
-import Track from './Track';
-import Switch from './Switch';
 import Stepper from './Stepper';
+import Switch from './Switch';
+import Track from './Track';
 
 export default function App() {
   return (
@@ -26,9 +26,9 @@ export default function App() {
       <Password />
       <RadioButton />
       <Select />
-      <Track />
-      <Switch />
       <Stepper />
+      <Switch />
+      <Track />
     </Router>
   );
 }

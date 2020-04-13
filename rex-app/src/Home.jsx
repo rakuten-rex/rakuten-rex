@@ -10,6 +10,7 @@ export default function Home() {
     'Password',
     'RadioButton',
     'Select',
+    'Stepper',
     'Switch',
     'TextField',
     'Textarea',
