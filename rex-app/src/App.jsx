@@ -8,6 +8,7 @@ import Grid from './Grid';
 import Panel from './Panel';
 import Password from './Password';
 import RadioButton from './RadioButton';
+import Select from './Select';
 import Track from './Track';
 import Switch from './Switch';
 import Stepper from './Stepper';
@@ -24,6 +25,7 @@ export default function App() {
       <Panel />
       <Password />
       <RadioButton />
+      <Select />
       <Track />
       <Switch />
       <Stepper />
