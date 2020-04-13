@@ -3,6 +3,9 @@ import Stepper from '@rakuten-rex/stepper';
 
 export default function Page() {
   return (
-    <Stepper minusLabel='minus button' plusLabel='plus button' />
+    <Stepper 
+      minusLabel='minus button' 
+      plusLabel='plus button' 
+    />
   );
 }
