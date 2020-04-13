@@ -6,7 +6,7 @@ export default function Home() {
     'Button',
     'Checkbox',
     'Grid',
-    'Paper',
+    'Panel',
     'Password',
     'RadioButton',
     'Select',
