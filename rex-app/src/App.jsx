@@ -12,6 +12,7 @@ import Select from './Select';
 import Stepper from './Stepper';
 import Switch from './Switch';
 import TextField from './TextField';
+import Textarea from './Textarea';
 import Track from './Track';
 
 export default function App() {
@@ -30,6 +31,7 @@ export default function App() {
       <Stepper />
       <Switch />
       <TextField />
+      <Textarea />
       <Track />
     </Router>
   );
