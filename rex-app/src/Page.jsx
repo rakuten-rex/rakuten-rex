@@ -8,25 +8,35 @@ export default function Page(main, list) {
       <RouterSwitch>
         {/* Main route */}
         <Route exact path={`/${main}/`}>
-          <div>
-            <div>
-              <RouterLink to="/">Home</RouterLink>
-              {` / `}
-              {main}
-            </div>
-            <h1>{main}</h1>
-            <ul>
-              {
-                list.map(({ name }) => {
-                  return (
-                    <li key={`page-content-${name}`}>
-                      <RouterLink to={`/${main}/${name}`}>{name}</RouterLink>
-                    </li>
-                  )
-                })
-              }
-            </ul>
-          </div>
+          <Container>
+            <Row key='breadcrumbs'>
+              <Col>
+                <RouterLink to="/">Home</RouterLink>
+                {` / `}
+                {main}
+              </Col>
+            </Row>
+            <Row key='title'>
+              <Col>
+                <h1>{main}</h1>
+              </Col>
+            </Row>
+            <Row key='index'>
+              <Col>
+                <ul>
+                  {
+                    list.map(({ name }) => {
+                      return (
+                        <li key={`page-content-${name}`}>
+                          <RouterLink to={`/${main}/${name}`}>{name}</RouterLink>
+                        </li>
+                      )
+                    })
+                  }
+                </ul>
+              </Col>
+            </Row>
+          </Container>
         </Route>
         {/* Components variations routes */}
         {
