@@ -11,6 +11,7 @@ import RadioButton from './RadioButton';
 import Select from './Select';
 import Stepper from './Stepper';
 import Switch from './Switch';
+import TextField from './TextField';
 import Track from './Track';
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
       <Select />
       <Stepper />
       <Switch />
+      <TextField />
       <Track />
     </Router>
   );
