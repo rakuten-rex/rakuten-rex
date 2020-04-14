@@ -1,7 +1,7 @@
 import React from 'react';
 import SelectLabel from '@rakuten-rex/select';
 
-export default function Page() {
+export default function MyComponent() {
   return (
     <SelectLabel
       id='age' 

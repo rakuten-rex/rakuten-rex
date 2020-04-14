@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Container, Col } from '@rakuten-rex/grid/Grid';
 import './example-util.scss';
 
-export default function Page() {
+export default function MyComponent() {
   return (
     <Container className='rex-grid-example'>
       <Row key='grid-title'>

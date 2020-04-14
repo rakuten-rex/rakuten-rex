@@ -1,7 +1,7 @@
 import React from 'react';
 import TextFieldLabel from '@rakuten-rex/text-field';
 
-export default function Page() {
+export default function MyComponent() {
   return (
     <TextFieldLabel 
       id='age' 

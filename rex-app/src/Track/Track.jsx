@@ -1,7 +1,7 @@
 import React from 'react';
 import Track from '@rakuten-rex/track';
 
-export default function Page() {
+export default function MyComponent() {
   return (
     <Track
       maxsteps={5}

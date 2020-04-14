@@ -1,7 +1,7 @@
 import React from 'react';
 import TextareaLabel from '@rakuten-rex/textarea';
 
-export default function Page() {
+export default function MyComponent() {
   return (
     <TextareaLabel 
       placeholder='Placeholder' 

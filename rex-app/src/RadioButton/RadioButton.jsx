@@ -1,7 +1,7 @@
 import React from 'react';
 import RadioGroup from '@rakuten-rex/radio-button';
 
-export default function Page() {
+export default function MyComponent() {
   return (
     <RadioGroup
       options={[
