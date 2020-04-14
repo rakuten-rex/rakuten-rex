@@ -5,7 +5,7 @@ export default function Index() {
   return Page('TextField', [
     {
       name: 'Default',
-      Component: lazy(() => import('./TextField'))
+      Component: lazy(() => import('./Default'))
     },
   ]);
 }

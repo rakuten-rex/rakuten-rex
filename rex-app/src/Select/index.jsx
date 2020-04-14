@@ -5,7 +5,7 @@ export default function Index() {
   return Page('Select', [
     {
       name: 'Default',
-      Component: lazy(() => import('./Select'))
+      Component: lazy(() => import('./Default'))
     },
   ]);
 }

@@ -5,7 +5,7 @@ export default function Index() {
   return Page('Stepper', [
     {
       name: 'Default',
-      Component: lazy(() => import('./Stepper'))
+      Component: lazy(() => import('./Default'))
     },
   ]);
 }

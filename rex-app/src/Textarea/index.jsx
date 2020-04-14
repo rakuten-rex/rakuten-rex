@@ -5,7 +5,7 @@ export default function Index() {
   return Page('Textarea', [
     {
       name: 'Default',
-      Component: lazy(() => import('./Textarea'))
+      Component: lazy(() => import('./Default'))
     },
   ]);
 }

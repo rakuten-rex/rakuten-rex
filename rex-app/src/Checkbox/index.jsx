@@ -5,7 +5,7 @@ export default function Index() {
   return Page('Checkbox', [
     {
       name: 'Default',
-      Component: lazy(() => import('./Checkbox'))
+      Component: lazy(() => import('./Default'))
     },
   ]);
 }

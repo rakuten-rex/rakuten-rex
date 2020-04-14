@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import { Route, Switch as RouterSwitch, Link as RouterLink } from 'react-router-dom';
+import { Row, Container, Col } from '@rakuten-rex/grid/Grid';
 
 export default function Page(main, list) {
   return (
@@ -8,12 +9,15 @@ export default function Page(main, list) {
         {/* Main route */}
         <Route exact path={`/${main}/`}>
           <div>
+            <div>
+              <RouterLink to="/">Home</RouterLink>
+              {` / `}
+              {main}
+            </div>
             <h1>{main}</h1>
-            <RouterLink to="/">Home</RouterLink>
             <ul>
               {
                 list.map(({ name }) => {
-
                   return (
                     <li key={`page-content-${name}`}>
                       <RouterLink to={`/${main}/${name}`}>{name}</RouterLink>
@@ -27,11 +31,31 @@ export default function Page(main, list) {
         {/* Components variations routes */}
         {
           list.map(({ name, Component }) => {
-
+            const githubUrl = 'https://github.com/rakuten-rex/rakuten-rex/blob/develop/rex-app/src';
             return (
               <Route path={`/${main}/${name}`} key={`route-${name}`}>
-                <h2>{name}</h2>
-                <Component />
+                <Container>
+                  <Row key='breadcrumbs'>
+                    <Col>
+                      <RouterLink to="/">Home</RouterLink>
+                      {` / `}
+                      <RouterLink to={`/${main}/`}>{main}</RouterLink>
+                      {` / `}
+                      {name}
+                    </Col>
+                  </Row>
+                  <Row key='title'>
+                    <Col xs='10'>
+                      <h1>{name}</h1>
+                    </Col>
+                    <Col xs='2'>
+                      <a href={`${githubUrl}/${main}/${name}.jsx`}>Github source code</a>
+                    </Col>
+                  </Row>
+                  <div id="react-code-sample">
+                    <Component />
+                  </div>
+                </Container>
               </Route>
             )
           })

@@ -5,7 +5,7 @@ export default function Index() {
   return Page('Password', [
     {
       name: 'Default',
-      Component: lazy(() => import('./Password'))
+      Component: lazy(() => import('./Default'))
     },
   ]);
 }

@@ -5,7 +5,7 @@ export default function Index() {
   return Page('Track', [
     {
       name: 'Default',
-      Component: lazy(() => import('./Track'))
+      Component: lazy(() => import('./Default'))
     },
   ]);
 }

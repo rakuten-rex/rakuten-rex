@@ -21,7 +21,8 @@ export default function Home() {
     <RouterSwitch>
       <Route exact path="/">
         <div>
-          <h1>Home</h1>
+          <RouterLink to="/">Home</RouterLink>
+          <h1>ReX Front-end Components Library <small>React Code Samples</small></h1>
           <h2>Forms</h2>
           <ul>
             {

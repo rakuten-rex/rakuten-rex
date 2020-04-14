@@ -5,7 +5,7 @@ export default function Index() {
   return Page('Grid', [
     {
       name: 'Default',
-      Component: lazy(() => import('./Grid'))
+      Component: lazy(() => import('./Default'))
     },
   ]);
 }

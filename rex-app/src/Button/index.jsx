@@ -5,7 +5,7 @@ export default function Index() {
   return Page('Button', [
     {
       name: 'Default',
-      Component: lazy(() => import('./Button'))
+      Component: lazy(() => import('./Default'))
     },
     {
       name: 'OutlineButton',

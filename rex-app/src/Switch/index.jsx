@@ -5,7 +5,7 @@ export default function Index() {
   return Page('Switch', [
     {
       name: 'Default',
-      Component: lazy(() => import('./Switch'))
+      Component: lazy(() => import('./Default'))
     },
   ]);
 }
